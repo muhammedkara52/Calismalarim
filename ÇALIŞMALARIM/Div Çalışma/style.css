@@ -1,0 +1,98 @@
+*{
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+
+.div1{
+    width: 250px;
+    height: 250px;
+    background-color:yellow;
+    display: inline-block;
+    border-radius: 30px;
+    color: blue;
+    font-size: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.div1:hover{
+    transform: scale(.5);
+}
+
+.div2{
+    width: 250px;
+    height: 250px;
+    background-color:blue;
+    display: inline-block;
+    border-radius:30px;
+    color:yellow;
+    font-size: 50px;
+    margin: 0 10px 0 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.div2:hover{
+    transform: scale(.5);
+}
+
+.div3{
+    width: 250px;
+    height: 250px;
+    background-color:red;
+    display: inline-block;
+    border-radius:30px;
+    color:white;
+    font-size: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.div3:hover{
+    transform: scale(.5);
+}
+
+.div4{
+    display:inline-block;
+    width: 602px;
+    height: 500px;
+    background-color:turquoise;
+    border-radius: 30px;
+    color:black;
+    font-size: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.div4:hover{
+    transform: rotate(360deg);
+}
+
+.div-footer{
+    width: 810px;
+    height: 250px;
+    background-color:cyan;
+    display:inline-block;
+    border-radius:30px;
+    color:red;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.div-footer:hover{
+    transform: rotate(360deg);
+}
+p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+}
