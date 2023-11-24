@@ -6,11 +6,12 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="/Portfolio Website/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
     
     <div class="hero">
-        <nav>
+        <nav class="nav">
             <img src="images/logo.png" class="logo">
             <ul>
                 <li><a href="#">HOME</a></li>
@@ -54,6 +55,27 @@
                 localStorage.setItem("theme", "light");
             }
         }
+
+        window.sr = new ScrollReveal()
+
+        sr.reveal(".nav",{
+            delay:1200,
+            distance:"50px",
+            origin:"top",
+        })
+
+        sr.reveal(".info",{
+            delay:1500,
+            distance:"70px",
+            origin:"left",
+        })
+
+        sr.reveal(".img-box",{
+            delay:1800,
+            distance:"60px",
+            origin:"right",
+        })
+
     </script>
 
 </body>

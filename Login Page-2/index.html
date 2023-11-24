@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Smooch+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <title>Login Page</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
             <div class="form_section">
                 <input class="input_type" type="text" placeholder="Username">
                 <input class="input_type" type="password" placeholder="password">
-                <button>NEXT</button>
+                <button class="btn">NEXT</button>
             </div>
 
             <div class="social_media_buttons">
@@ -47,5 +49,39 @@
     </div>
 
     <img src="./images/star.png" class="star_img" alt="star-logo">
+
+
+    <script>
+
+        window.sr = new ScrollReveal()  //ScrollReveali başlatmak için yazılan kod.
+
+        sr.reveal(".left_side",{
+            delay: 2000,
+            distance:"100px",
+            // origin:"left"
+            scale:0.3
+        });
+
+        sr.reveal(".right_side",{
+            delay: 1500,
+            distance:"100px",
+            origin:"right"
+        });
+
+        sr.reveal(".star_img",{
+            delay: 2500,
+            distance:"400px",
+            origin:"top"
+        });
+
+        sr.reveal(".btn",{
+            delay: 2500,
+            distance:"400px",
+            origin:"bottom"
+        });
+
+    </script>
+
+
 </body>
 </html>
